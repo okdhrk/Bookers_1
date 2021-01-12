@@ -1,0 +1,7 @@
+<h1>Books</h1>
+<% @lists.each do |list| %>
+  <p>Title</p>
+  <span>
+    <%= link_to list.title, todolist_path(list.id) %>
+  </span>
+<% end %>
